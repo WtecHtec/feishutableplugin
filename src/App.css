@@ -1,18 +1,42 @@
 @import 'reset-css';
 
 .main {
-	padding: 1.5rem 1rem 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 
 .main h4 {
-	font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 .main code {
-	color: #d63384;
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #d63384;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .block {
-	padding: 12px 0;
+  padding: 12px 0;
+}
+
+.block .mr-12 {
+  margin-right: 12px !important;
+}
+
+.mr-12 {
+  margin-right: 12px !important;
+}
+
+.cell-span {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.cell-label {
+  font-size: 12px;
 }
