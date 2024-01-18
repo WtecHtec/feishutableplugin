@@ -83,7 +83,7 @@ export default function Extract(props: any) {
     <SelectCell ref={selectRef}></SelectCell>
 
     <div className="block">
-      <Button onClick={handleExtract} className="mr-12">提取</Button>
+      <Button onClick={handleExtract} className="mr-12">预览</Button>
       <Button onClick={handleSyncToTable}>同步到表格</Button>
     </div>
     <Divider dashed={true} />
