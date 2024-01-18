@@ -25,7 +25,7 @@ function deleteCharsFromStart(str: any, count: any) {
 
 function deleteCharsFromAppoint(str: any, point: any) {
   const { start, end, } = point
-  let startIndex = start.point
+  let startIndex = start.point 
   let endIndex = end.point
   if (start.type === 'which') {
     startIndex = findNthOccurrence(str, start.txt, start.wpoint)
@@ -36,7 +36,8 @@ function deleteCharsFromAppoint(str: any, point: any) {
     if (endIndex === -1) return str
   }
   if (startIndex > endIndex) return str
-  return  ` ${str.slice(0, startIndex)}${str.slice(endIndex)}`
+  console.log(startIndex, endIndex)
+  return  `${str.slice(0, startIndex + (start.include === '1' ? 0 : 1))}${str.slice(endIndex + (end.include === '1' ? 1 : 0))}`
 }
 
 export default function Delete(props: any) {

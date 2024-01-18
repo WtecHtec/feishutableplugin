@@ -36,7 +36,7 @@ function deleteCharsFromAppoint(str: any, point: any) {
     if (endIndex === -1) return str
   }
   if (startIndex > endIndex) return str
-  return  str.slice(startIndex, endIndex)
+  return  str.slice(startIndex + (start.include === '1' ? 0 : 1), endIndex + (end.include === '1' ? 1 : 0))
 }
 
 export default function Cutout(props: any) {
